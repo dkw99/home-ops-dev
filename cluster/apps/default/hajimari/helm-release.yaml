@@ -40,7 +40,7 @@ spec:
       groups:
         - name: Communicate
           links:
-            - name: Discord
+            - name: Discord-new
               url: "https://discord.com"
             - name: Gmail
               url: "https://gmail.com"
@@ -105,13 +105,13 @@ spec:
     ingress:
       main:
         enabled: true
-        ingressClassName: "traefik"
+        ingressClassName: "nginx"
         annotations:
           cert-manager.io/cluster-issuer: "letsencrypt-staging"
           hajimari.io/enable: "true"
           hajimari.io/icon: "weather-sunset"
-          traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
-          traefik.ingress.kubernetes.io/router.middlewares: "networking-internal-only@kubernetescrd"
+          # traefik.ingress.kubernetes.io/router.entrypoints: "websecure"
+          # traefik.ingress.kubernetes.io/router.middlewares: "networking-internal-only@kubernetescrd"
         hosts:
           - host: "hajimari.${SECRET_DOMAIN}"
             paths:
