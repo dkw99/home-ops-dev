@@ -8,12 +8,12 @@
         ":enablePreCommit",
         ":automergeDigest",
         ":automergeBranchPush",
-        "github>onedr0p/home-ops//.github/renovate/allowedVersions.json5",
-        "github>onedr0p/home-ops//.github/renovate/autoMerge.json5",
-        "github>onedr0p/home-ops//.github/renovate/commitMessage.json5",
-        "github>onedr0p/home-ops//.github/renovate/groups.json5",
-        "github>onedr0p/home-ops//.github/renovate/labels.json5",
-        "github>onedr0p/home-ops//.github/renovate/semanticCommits.json5"
+        "github>dkw99/home-ops-dev//.github/renovate/allowedVersions.json5",
+        "github>dkw99/home-ops-dev//.github/renovate/autoMerge.json5",
+        "github>dkw99/home-ops-dev//.github/renovate/commitMessage.json5",
+        "github>dkw99/home-ops-dev//.github/renovate/groups.json5",
+        "github>dkw99/home-ops=dev//.github/renovate/labels.json5",
+        "github>dkw99/home-ops-dev//.github/renovate/semanticCommits.json5"
     ],
     "timezone": "Australia/Sydney",
     "platform": "github",
