@@ -16,7 +16,7 @@
     "github>onedr0p/home-ops//.github/renovate/semanticCommits.json5"
   ],
   "platform": "github",
-  "username": "wisesalmon-bot[bot]",
+  "username": "dkw99",
   "repositories": ["dkw99/home-ops-dev"],
   "onboarding": false,
   "requireConfig": false,
