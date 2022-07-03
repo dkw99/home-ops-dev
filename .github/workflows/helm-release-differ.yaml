@@ -2,7 +2,6 @@
 name: Helm Release Differ
 
 on: # yamllint disable-line rule:truthy
-  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -12,7 +11,7 @@ on: # yamllint disable-line rule:truthy
 env:
   # Currently no way to detect automatically
   DEFAULT_BRANCH: main
-  BOT_USERNAME: "dkw99"
+  BOT_USERNAME: "wisesalmon-bot[bot]"
 
 jobs:
   detect-file-changes:
@@ -57,7 +56,7 @@ jobs:
       - name: Helm Release Differ
         id: diff
         run: |
-          diff=$( .github/scripts/helm-release-differ.sh --source-file "default/${{ matrix.file }}" --target-file "${{ matrix.file }}" --remove-common-labels)
+          diff=$(.github/scripts/helm-release-differ.sh --source-file "default/${{ matrix.file }}" --target-file "${{ matrix.file }}" --remove-common-labels)
           echo "${diff}"
           diff="${diff//'%'/'%25'}"
           diff="${diff//$'\n'/'%0A'}"
