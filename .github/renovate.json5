@@ -1,11 +1,15 @@
 {
   "enabled": true,
+  "timezone": "Australia/Sydney",
   "semanticCommits": "enabled",
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "Renovate Dashboard",
   "suppressNotifications": ["prIgnoreNotification"],
   "rebaseWhen": "conflicted",
-  "schedule": ["every weekend"],
+  "schedule": [
+      "after 9pm every weekend",
+      "before 10pm every weekend" 
+  ],
   "pre-commit": {
     "enabled": true
   },
