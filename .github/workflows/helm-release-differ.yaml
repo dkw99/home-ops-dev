@@ -9,7 +9,7 @@ on: # yamllint disable-line rule:truthy
       - "**.yaml"
 
 env:
-  conf_live_branch: master
+  conf_live_branch: main
   conf_ignore_known_labels_containing_versions: true
 
 jobs:
